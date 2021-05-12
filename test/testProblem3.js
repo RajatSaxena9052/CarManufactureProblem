@@ -1,5 +1,13 @@
 const data = require("../data");
 const fn = require("../problem3");
-var d = data.inventory
+let d = data.inventory
 
-console.log(fn(d))
+
+const result = fn(d)
+
+if(typeof result == `object`){
+    console.log(fn(d))
+    }
+else{
+    console.log(result);
+}
