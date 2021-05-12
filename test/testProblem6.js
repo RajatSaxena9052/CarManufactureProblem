@@ -5,8 +5,10 @@ let d = data.inventory
 const result = fn(d)
 
 if(typeof result == 'object'){
-    console.log(fn(d));
+    if(result.length==0){
+        console.log(result);
     }
-else{
-    console.log(result);
+    else{
+         console.log(result[0]);
+    }
 }

@@ -1,14 +1,20 @@
 function problem(d){
-    let carYears = [];
 
-    if(d.length != 0){
-    for(let i of d){
-        carYears.push(i["car_year"]);
-        }
-    return carYears
-}
+    if(d == undefined || typeof d != "object"){
+        return [];
+    }
     else{
-        return "Inventory is Empty : No Data Found !!"
+        let carYears = [];
+
+        if(d.length != 0){
+            for(let i of d){
+                carYears.push(i["car_year"]);
+                }
+            return carYears
+        }
+        else{
+                return [];
+            }
     }
 }
 

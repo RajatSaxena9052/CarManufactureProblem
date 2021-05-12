@@ -5,9 +5,12 @@ let n = 33;
 
 const result = fn(d,n);
 
+
 if(typeof result == `object`){
+    if(result.length == 0){
+        console.log(result)
+    }else{
     console.log(`Car ${result['id']} is a  ${result['car_year']}  ${result['car_make']}  ${result['car_model']}`);
+    }
 }
-else{
-    console.log(result);
-}
+

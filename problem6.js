@@ -1,25 +1,29 @@
 function problem(d){
-    let bwCars= [];
 
-    if(d.length != 0){
-    for(let i of d){
-        if(i["car_make"]== "Audi" || i["car_make"]== "BMW"){
-        bwCars.push(i);
-        }    
-    }
-        if(bwCars.length == 0){
-            return `There are no cars by BMW and Audi`
-            }
-            else{
-                return JSON.stringify(bwCars);
-            }
+    if(d == undefined || typeof d != "object"){
+        return [];
     }
     else{
-        return "Inventory is Empty : No Data Found !!"
-    }
+            let bwCars= [];
 
-    return JSON.stringify(bwCars);
+        if(d.length != 0){
 
+            for(let i of d){
+                if(i["car_make"]== "Audi" || i["car_make"]== "BMW"){
+                bwCars.push(i);
+                }    
+            }
+            if(bwCars.length == 0){
+                    return []
+                    }
+                    else{
+                        return [JSON.stringify(bwCars)];
+                    }
+        }
+        else{
+            return [];
+            }
+        }
 }
 
 module.exports = problem

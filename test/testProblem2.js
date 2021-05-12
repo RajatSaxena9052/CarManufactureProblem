@@ -5,8 +5,13 @@ let d = data.inventory ;
 const result = fn(d)
 
 if(typeof result == `object`){
-    console.log(`Last car is a ${result["car_make"]} ${result["car_model"]}.`);
+
+        if(result.length == 0){
+            console.log(result);
+        }
+        else
+        {
+            console.log(`Last car is a ${result["car_make"]} ${result["car_model"]}.`);
+        }
 }
-else{
-    console.log(result);
-}
+

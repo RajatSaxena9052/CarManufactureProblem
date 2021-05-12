@@ -1,11 +1,17 @@
 function problem(d){
-    let lastIndex = d.length - 1 ;
-    
-    if(d.length != 0 ){     
-    return d[lastIndex]
+    if(d == undefined ){
+        return [];
     }
     else{
-        return "Inventory is Empty : No Data Found !!"   
+
+        let lastIndex = d.length - 1 ;
+
+        if(d.length != 0 ){     
+            return d[lastIndex]
+        }
+        else{
+            return [];   
+        }
     }
 }
 
