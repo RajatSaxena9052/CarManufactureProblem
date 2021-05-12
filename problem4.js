@@ -7,4 +7,4 @@ function problem(d){
     return carYears
 }
 
-module.exports = {problem}
+module.exports = problem

@@ -9,4 +9,4 @@ function problem(d){
 
 }
 
-module.exports = {problem}
+module.exports = problem
