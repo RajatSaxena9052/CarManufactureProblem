@@ -2,4 +2,4 @@ const data = require("../data");
 const fn = require("../problem3");
 var d = data.inventory
 
-console.log(fn.p3(d))
+console.log(fn.problem(d))

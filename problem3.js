@@ -1,4 +1,4 @@
-function p3(d){
+function problem(d){
     var carModels = []
     for(var i of d){
         carModels.push(i["car_model"]);
@@ -7,4 +7,4 @@ function p3(d){
 
 }
 
-module.exports = {p3}
+module.exports = {problem}

@@ -1,4 +1,4 @@
-function p6(d){
+function problem(d){
     var bwCars= [];
     for(var i of d){
         if(i["car_make"]== "Audi" || i["car_make"]== "BMW"){
@@ -9,4 +9,4 @@ function p6(d){
 
 }
 
-module.exports = {p6}
+module.exports = {problem}

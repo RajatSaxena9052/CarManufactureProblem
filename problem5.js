@@ -1,4 +1,4 @@
-function p5(d){
+function problem(d){
     var carYears = [];
     var olderCars=[];
     for(var i of d){
@@ -10,4 +10,4 @@ function p5(d){
 
 }
 
-module.exports = {p5}
+module.exports = {problem}

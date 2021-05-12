@@ -1,4 +1,4 @@
-function p4(d){
+function problem(d){
     var carYears = [];
     var olderCars=[];
     for(var i of d){
@@ -7,4 +7,4 @@ function p4(d){
     return carYears
 }
 
-module.exports = {p4}
+module.exports = {problem}

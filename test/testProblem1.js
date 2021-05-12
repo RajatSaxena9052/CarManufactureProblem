@@ -5,5 +5,5 @@ var d = data.inventory;
 var n = 33
 
 
-console.log(fn.p1(d,n))
+console.log(fn.problem(d,n))
 
